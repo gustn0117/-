@@ -509,3 +509,59 @@
   .bento-grid > .bento-wide,
   .bento-grid > .bento-tall { grid-column: span 1; grid-row: span 1; }
 }
+
+/* ===== MOBILE: 모든 장식 애니메이션 비활성화 (깜빡임 방지) ===== */
+@media (max-width: 767px) {
+  .float-slow,
+  .float-medium,
+  .float-fast,
+  .orbit-slow,
+  .orbit-medium,
+  .particle,
+  .shimmer,
+  .text-glow,
+  .glow-ring,
+  .animate-pulse-soft,
+  .ripple-circle {
+    animation: none !important;
+  }
+
+  .text-glow {
+    text-shadow: none !important;
+  }
+
+  .glow-text-amber {
+    text-shadow: none !important;
+  }
+
+  /* backdrop-filter 제거 (구형 안드로이드 깜빡임 원인) */
+  .glass,
+  .glass-light,
+  .glass-dark {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 투명 배경 blur 제거 */
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .glass-dark {
+    background: rgba(16, 42, 67, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* 장식 요소 숨김 */
+  .dot-grid {
+    display: none !important;
+  }
+
+  /* hover 효과 제거 (모바일에서 불필요) */
+  .tilt-hover:hover {
+    transform: none;
+  }
+  .hover-glow:hover {
+    box-shadow: none;
+  }
+}

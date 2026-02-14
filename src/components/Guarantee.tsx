@@ -13,8 +13,8 @@ export default function Guarantee() {
         <span className="text-[30vw] sm:text-[25vw] font-black text-white/[0.03] leading-none">₩0</span>
       </div>
 
-      {/* Floating decorations */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Floating decorations - PC only */}
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute top-[10%] left-[5%] w-28 h-28 border border-white/5 rounded-full float-slow" />
         <div className="absolute bottom-[15%] right-[8%] w-20 h-20 border border-white/5 rounded-full float-medium" />
         <div className="absolute top-[50%] right-[5%] w-4 h-4 bg-primary-400/20 rounded-full float-slow" style={{ animationDelay: "-2s" }} />

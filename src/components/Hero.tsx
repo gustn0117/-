@@ -21,21 +21,20 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900/60 via-transparent to-navy-900/40" />
       </div>
 
-      {/* Ambient morphing blobs */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {/* Ambient morphing blobs - PC only */}
+      <div className="hidden md:block absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-15%] left-[-8%] w-[55%] h-[55%] bg-primary-400/12 blob-morph blur-[140px]" />
         <div className="absolute bottom-[-10%] right-[-8%] w-[45%] h-[45%] bg-primary-600/8 blob-morph blur-[120px]" style={{ animationDelay: "-4s" }} />
         <div className="absolute top-[40%] left-[60%] w-[25%] h-[25%] bg-amber-500/6 blob-morph blur-[100px]" style={{ animationDelay: "-6s" }} />
       </div>
 
-      {/* Geometric decorations */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Geometric decorations - PC only */}
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute top-24 right-12 w-40 h-40 dot-grid opacity-20 float-slow" />
         <div className="absolute top-[30%] right-[8%] w-24 h-24 border border-white/8 rounded-full float-medium" />
         <div className="absolute top-[55%] right-[18%] w-8 h-8 bg-primary-400/15 rounded-full float-slow" style={{ animationDelay: "-1s" }} />
         <div className="absolute top-[20%] right-[28%] w-px h-40 bg-gradient-to-b from-transparent via-white/8 to-transparent rotate-[30deg]" />
         <div className="absolute bottom-[30%] left-[5%] w-20 h-20 border border-white/5 rounded-full float-medium" style={{ animationDelay: "-3s" }} />
-        {/* Orbiting elements */}
         <div className="absolute top-[35%] right-[12%] w-3 h-3 bg-amber-400/30 rounded-full orbit-slow" />
         <div className="absolute top-[25%] right-[20%] w-2 h-2 bg-primary-300/20 rounded-full orbit-medium" />
       </div>
