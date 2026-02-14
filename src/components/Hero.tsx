@@ -52,63 +52,78 @@ export default function Hero() {
 
       {/* Main content */}
       <div className="relative z-10 flex-1 flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl mx-auto w-full text-center">
-          {/* Live tag */}
-          <div className="mb-8 flex items-center justify-center gap-3">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="ping-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
-            </span>
-            <span className="text-primary-300 text-2xl sm:text-3xl md:text-4xl font-black tracking-[0.15em]">
-              하수 누수 토탈케어
-            </span>
+        <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+          {/* Left: Text */}
+          <div className="flex-1 text-center lg:text-left">
+            {/* Live tag */}
+            <div className="mb-6 flex items-center justify-center lg:justify-start gap-3">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="ping-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+              </span>
+              <span className="text-primary-300 text-xl sm:text-2xl md:text-3xl font-black tracking-[0.15em]">
+                하수 누수 토탈케어
+              </span>
+            </div>
+
+            {/* Giant brand */}
+            <h1 className="text-[13vw] sm:text-[10vw] md:text-[8vw] lg:text-[6vw] font-black leading-[1] tracking-tight mb-4 hero-brand shine-text">
+              배관구조대
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-lg mx-auto lg:mx-0 leading-relaxed mb-8">
+              하수구 막힘부터 누수까지,
+              <br />
+              전문 기술진이 <span className="text-white font-semibold">직접 해결</span>합니다.
+            </p>
+
+            {/* Mini stat badges */}
+            <div className="flex items-center justify-center lg:justify-start gap-8 sm:gap-10 mb-10">
+              {[
+                { icon: Clock, value: "30분", label: "평균출동", neon: "neon-primary" },
+                { icon: Zap, value: "10K+", label: "누적해결", neon: "neon-amber" },
+                { icon: Shield, value: "₩0", label: "미해결시", neon: "neon-emerald" },
+              ].map((s, i) => (
+                <div key={i} className="text-center group">
+                  <s.icon className={`w-4 h-4 ${s.neon} mx-auto mb-1.5 opacity-80`} />
+                  <div className={`text-2xl sm:text-3xl font-black ${s.neon}`}>{s.value}</div>
+                  <div className="text-[10px] text-white/60 mt-0.5 tracking-wider font-medium">{s.label}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
+              <a
+                href="tel:01039712272"
+                className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold text-lg py-5 px-10 rounded-full overflow-hidden"
+              >
+                <Phone className="w-5 h-5 relative z-10" />
+                <span className="relative z-10">010-3971-2272</span>
+                <ArrowRight className="relative z-10 w-4 h-4 opacity-50" />
+              </a>
+              <a
+                href="sms:01039712272"
+                className="inline-flex items-center justify-center gap-3 bg-white/15 border border-white/20 text-white font-bold text-lg py-5 px-10 rounded-full"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>문자상담</span>
+              </a>
+            </div>
           </div>
 
-          {/* Giant brand */}
-          <h1 className="text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[8vw] font-black leading-[1] tracking-tight mb-6 hero-brand shine-text">
-            배관구조대
-          </h1>
-
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-lg mx-auto leading-relaxed mb-12">
-            하수구 막힘부터 누수까지,
-            <br />
-            전문 기술진이 <span className="text-white font-semibold">직접 해결</span>합니다.
-          </p>
-
-          {/* Mini stat badges */}
-          <div className="flex items-center justify-center gap-8 sm:gap-12 mb-14">
-            {[
-              { icon: Clock, value: "30분", label: "평균출동", neon: "neon-primary" },
-              { icon: Zap, value: "10K+", label: "누적해결", neon: "neon-amber" },
-              { icon: Shield, value: "₩0", label: "미해결시", neon: "neon-emerald" },
-            ].map((s, i) => (
-              <div key={i} className="text-center group">
-                <s.icon className={`w-4 h-4 ${s.neon} mx-auto mb-1.5 opacity-80 group-hover:opacity-100 transition-opacity`} />
-                <div className={`text-3xl sm:text-4xl font-black ${s.neon}`}>{s.value}</div>
-                <div className="text-[10px] text-white/60 mt-0.5 tracking-wider font-medium">{s.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <a
-              href="tel:01039712272"
-              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-300 hover:to-primary-400 text-white font-bold text-lg py-5 px-10 rounded-full transition-all duration-300 hover:shadow-glow-lg overflow-hidden"
-            >
-              <div className="absolute inset-0 shimmer rounded-full" />
-              <Phone className="w-5 h-5 relative z-10" />
-              <span className="relative z-10">010-3971-2272</span>
-              <ArrowRight className="relative z-10 w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-            </a>
-            <a
-              href="sms:01039712272"
-              className="inline-flex items-center justify-center gap-3 glass text-white font-bold text-lg py-5 px-10 rounded-full transition-all duration-300 hover:bg-white/15"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>문자상담</span>
-            </a>
+          {/* Right: Technician image */}
+          <div className="hidden sm:block flex-shrink-0">
+            <div className="relative w-[240px] h-[280px] sm:w-[280px] sm:h-[320px] lg:w-[340px] lg:h-[400px]">
+              <Image
+                src="/images/technician-hero.png"
+                alt="배관구조대 전문 기술자"
+                fill
+                className="object-contain drop-shadow-2xl"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
