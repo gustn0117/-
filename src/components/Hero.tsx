@@ -40,7 +40,7 @@ export default function Hero() {
       </div>
 
       {/* Top scrolling marquee */}
-      <div className="relative z-10 mt-20 sm:mt-24 border-y border-white/15 bg-white/[0.04] backdrop-blur-sm py-3 overflow-hidden">
+      <div className="relative z-10 mt-20 sm:mt-24 border-y border-white/15 bg-navy-900/40 md:bg-white/[0.04] md:backdrop-blur-sm py-3 overflow-hidden">
         <div className="marquee-track">
           {[...Array(8)].map((_, i) => (
             <span key={i} className="text-sm text-white/50 font-medium tracking-wider whitespace-nowrap px-2">

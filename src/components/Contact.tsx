@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
 
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 bg-white/20 border border-white/20 rounded-full px-4 py-2 mb-8">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
@@ -85,7 +85,7 @@ export default function Contact() {
                 긴급상담 전화하기
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="sms:01039712272" className="w-full flex items-center justify-center gap-3 bg-white/[0.08] backdrop-blur-sm border border-white/10 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:bg-white/[0.15]">
+              <a href="sms:01039712272" className="w-full flex items-center justify-center gap-3 bg-white/15 border border-white/10 text-white font-bold text-lg py-5 px-8 rounded-2xl transition-all duration-300 hover:bg-white/[0.15]">
                 <MessageCircle className="w-5 h-5" />
                 문자상담
               </a>
