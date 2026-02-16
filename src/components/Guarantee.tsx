@@ -31,15 +31,18 @@ export default function Guarantee() {
             배관구조대의 약속
           </span>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white/80 mb-4">
-            해결하지 못했는데 요금청구?
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white/80 mb-4">
+            <span className="inline-block">해결하지 못했는데</span>{" "}
+            <span className="inline-block">요금청구?</span>
           </h2>
-          <h3 className="text-5xl sm:text-6xl md:text-8xl font-black text-white mb-8 text-glow shine-text">
+          <h3 className="text-4xl sm:text-6xl md:text-8xl font-black text-white mb-8 text-glow shine-text">
             미해결시 <span className="neon-amber">₩0</span>
           </h3>
-          <p className="text-white/65 max-w-2xl mx-auto leading-relaxed text-xl sm:text-2xl">
-            배관구조대는 고객님의 문제를 완벽하게 해결할 때까지 책임집니다.
-            해결하지 못하면 비용을 청구하지 않습니다.
+          <p className="text-white/65 max-w-2xl mx-auto leading-relaxed text-base sm:text-xl md:text-2xl px-2">
+            <span className="inline-block">배관구조대는 고객님의 문제를</span>{" "}
+            <span className="inline-block">완벽하게 해결할 때까지 책임집니다.</span>{" "}
+            <span className="inline-block">해결하지 못하면</span>{" "}
+            <span className="inline-block">비용을 청구하지 않습니다.</span>
           </p>
         </div>
 

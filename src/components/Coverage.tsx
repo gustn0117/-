@@ -45,11 +45,11 @@ export default function Coverage() {
               <span className="w-10 h-px bg-gradient-to-r from-primary-400 to-transparent" />
               Coverage
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black mb-4 leading-tight shine-text">
-              전국 어디서든<br />
-              <span className="neon-amber">빠르게 출동</span>합니다
+            <h2 className="text-3xl sm:text-5xl font-black mb-4 leading-tight shine-text">
+              <span className="inline-block">전국 어디서든</span><br />
+              <span className="inline-block"><span className="neon-amber">빠르게 출동</span>합니다</span>
             </h2>
-            <p className="text-white/65 mb-10 leading-relaxed">전국 네트워크로 어디서든 신속하게 방문합니다.</p>
+            <p className="text-white/65 mb-10 leading-relaxed text-sm sm:text-base">전국 네트워크로 어디서든 신속하게 방문합니다.</p>
 
             <div className="space-y-3 mb-10">
               {[

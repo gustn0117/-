@@ -70,13 +70,16 @@ export default function Contact() {
           <div className="absolute top-8 right-8 w-24 h-24 dot-grid opacity-20" />
 
           <div className="relative z-10 max-w-md">
-            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight shine-text">
+            <h3 className="text-2xl sm:text-4xl font-black text-white mb-4 leading-tight shine-text">
               배관 문제,<br />
-              더 이상 <span className="text-gradient-animate">고민하지 마세요.</span>
+              <span className="inline-block">더 이상</span>{" "}
+              <span className="inline-block text-gradient-animate">고민하지 마세요.</span>
             </h3>
-            <p className="text-white/65 mb-10 leading-relaxed">
-              24시간 전문 상담사가 대기하고 있습니다.
-              전화 한 통이면 전문 기사가 즉시 출동합니다.
+            <p className="text-white/65 mb-10 leading-relaxed text-sm sm:text-base">
+              <span className="inline-block">24시간 전문 상담사가</span>{" "}
+              <span className="inline-block">대기하고 있습니다.</span>{" "}
+              <span className="inline-block">전화 한 통이면</span>{" "}
+              <span className="inline-block">전문 기사가 즉시 출동합니다.</span>
             </p>
 
             <div className="space-y-3 mb-10">

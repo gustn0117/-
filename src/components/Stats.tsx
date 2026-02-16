@@ -29,8 +29,8 @@ export default function Stats() {
             <TrendingUp className="w-4 h-4" />
             수치로 증명합니다
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            <span className="text-primary-300">배관구조대</span>의 실적
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white">
+            <span className="inline-block"><span className="text-primary-300">배관구조대</span>의 실적</span>
           </h2>
         </div>
 

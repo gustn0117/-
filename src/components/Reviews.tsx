@@ -128,8 +128,9 @@ export default function Reviews() {
                 </div>
               ))}
             </div>
-            <p className="text-gradient-animate font-bold text-lg">
-              배관구조대는 해결 못할 시 금액을 받지 않습니다!
+            <p className="text-gradient-animate font-bold text-sm sm:text-lg">
+              <span className="inline-block">배관구조대는 해결 못할 시</span>{" "}
+              <span className="inline-block">금액을 받지 않습니다!</span>
             </p>
           </div>
           <a href="tel:01039712272" className="inline-flex items-center gap-2 bg-primary-400 hover:bg-primary-300 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm hover:shadow-glow">
