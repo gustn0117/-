@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Phone, MessageCircle, ChevronDown, Zap, Shield, Clock, ArrowRight } from "lucide-react";
 
 export default function Hero() {
-  const marqueeText = "24시간 긴급출동 · 출장비 무료 · 내시경 무료 · 미해결시 0원 · 전국 출동 · ";
+  const marqueeText = "24시간 긴급출동 · 출장비 무료 · 미해결시 0원 · 전국 출동 · ";
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
@@ -118,7 +118,7 @@ export default function Hero() {
           </div>
 
           {/* Brand */}
-          <h1 className="text-[14vw] sm:text-[11vw] md:text-[9vw] lg:text-[7vw] font-black leading-[1] tracking-tight mb-3 sm:mb-4 hero-brand shine-text">
+          <h1 className="text-[13vw] sm:text-[10vw] md:text-[8vw] lg:text-[5.5vw] font-black leading-[1] tracking-tight mb-3 sm:mb-4 hero-brand shine-text">
             배관구조대
           </h1>
 
@@ -181,7 +181,7 @@ export default function Hero() {
               <span className="bg-white text-amber-600 text-[10px] sm:text-xs font-black px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full animate-pulse-soft shrink-0">EVENT</span>
               <span className="text-white font-bold text-xs sm:text-base leading-tight">
                 <span className="inline-block">1만건 돌파 기념</span>{" "}
-                <span className="inline-block">— 출장비·내시경 검사 무료</span>
+                <span className="inline-block">— 출장비 무료</span>
               </span>
             </div>
             <a href="tel:01039712272" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors flex items-center gap-1">

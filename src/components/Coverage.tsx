@@ -54,7 +54,7 @@ export default function Coverage() {
             <div className="space-y-3 mb-10">
               {[
                 { region: "수도권", detail: "서울 · 경기 · 인천", time: "30분 내", color: "bg-primary-400", border: "border-primary-400/20" },
-                { region: "광역시", detail: "부산 · 대구 · 광주 · 대전 · 울산", time: "당일", color: "bg-amber-500", border: "border-amber-500/20" },
+                { region: "광역시", detail: "부산 · 대구 · 광주 · 대전 · 울산", time: "30분 내", color: "bg-amber-500", border: "border-amber-500/20" },
                 { region: "전국", detail: "전국 어디든 방문 서비스", time: "출동 가능", color: "bg-emerald-500", border: "border-emerald-500/20" },
               ].map((r, i) => (
                 <div key={i} className={`flex items-center gap-4 bg-white/15 rounded-2xl p-5 hover:bg-white/[0.12] transition-all duration-300 border ${r.border}`}>

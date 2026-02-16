@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { AlertTriangle, CheckCircle, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
 const cases = [
@@ -39,17 +39,12 @@ export default function BeforeAfter() {
 
               {/* Before */}
               <div className="px-8 py-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center">
-                    <AlertTriangle className="w-6 h-6 text-red-400" />
-                  </div>
-                  <div className="flex-1">
-                    <span className="inline-block bg-navy-800 text-white text-[10px] font-black tracking-wider px-3 py-1 rounded-full mb-2.5">BEFORE</span>
-                    <p className="text-navy-600 leading-relaxed mb-3">{c.before}</p>
-                    <div className="relative aspect-[16/10] rounded-xl overflow-hidden group">
-                      <Image src={c.beforeImg} alt={`${c.category} 시공 전`} fill className="object-cover img-zoom" sizes="(max-width: 768px) 100vw, 50vw" />
-                      <div className="absolute inset-0 bg-red-900/10" />
-                    </div>
+                <div>
+                  <span className="inline-block bg-navy-800 text-white text-[10px] font-black tracking-wider px-3 py-1 rounded-full mb-2.5">BEFORE</span>
+                  <p className="text-navy-600 leading-relaxed mb-3">{c.before}</p>
+                  <div className="relative aspect-[16/10] rounded-xl overflow-hidden group">
+                    <Image src={c.beforeImg} alt={`${c.category} 시공 전`} fill className="object-cover img-zoom" sizes="(max-width: 768px) 100vw, 50vw" />
+                    <div className="absolute inset-0 bg-red-900/10" />
                   </div>
                 </div>
               </div>
@@ -65,17 +60,12 @@ export default function BeforeAfter() {
 
               {/* After */}
               <div className="px-8 py-6 pb-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-emerald-500" />
-                  </div>
-                  <div className="flex-1">
-                    <span className="inline-block bg-emerald-500 text-white text-[10px] font-black tracking-wider px-3 py-1 rounded-full mb-2.5">AFTER</span>
-                    <p className="text-emerald-800 font-medium leading-relaxed mb-3">{c.after}</p>
-                    <div className="relative aspect-[16/10] rounded-xl overflow-hidden group">
-                      <Image src={c.afterImg} alt={`${c.category} 시공 후`} fill className="object-cover img-zoom" sizes="(max-width: 768px) 100vw, 50vw" />
-                      <div className="absolute inset-0 bg-emerald-900/5" />
-                    </div>
+                <div>
+                  <span className="inline-block bg-emerald-500 text-white text-[10px] font-black tracking-wider px-3 py-1 rounded-full mb-2.5">AFTER</span>
+                  <p className="text-emerald-800 font-medium leading-relaxed mb-3">{c.after}</p>
+                  <div className="relative aspect-[16/10] rounded-xl overflow-hidden group">
+                    <Image src={c.afterImg} alt={`${c.category} 시공 후`} fill className="object-cover img-zoom" sizes="(max-width: 768px) 100vw, 50vw" />
+                    <div className="absolute inset-0 bg-emerald-900/5" />
                   </div>
                 </div>
               </div>
