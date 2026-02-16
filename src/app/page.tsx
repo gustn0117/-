@@ -17,15 +17,14 @@ export default function Home() {
     <main className="relative">
       <Header />
       <Hero />
-      <Stats />
+      <Guarantee />
       <Services />
       <BeforeAfter />
-      <Process />
-
-      <Guarantee />
       <Coverage />
-      <Reviews />
+      <Stats />
       <Contact />
+      <Process />
+      <Reviews />
       <Footer />
       <FloatingButtons />
     </main>
