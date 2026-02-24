@@ -70,7 +70,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/5">
+        <div className="mt-10 pt-6 border-t border-white/5 space-y-3">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-white/40 text-xs">
+            <span>상호: 배관구조대</span>
+            <span className="hidden sm:inline">|</span>
+            <span>대표자명: 곽종문</span>
+            <span className="hidden sm:inline">|</span>
+            <span>사업자등록번호: 844-33-01483</span>
+            <span className="hidden sm:inline">|</span>
+            <span>주소: 전남 무안군 성남 1길 101</span>
+            <span className="hidden sm:inline">|</span>
+            <span>이메일: fe21501@naver.com</span>
+          </div>
           <p className="text-white/45 text-sm text-center">
             &copy; 2026 배관구조대. All rights reserved.
           </p>
